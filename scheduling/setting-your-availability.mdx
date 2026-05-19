@@ -1,0 +1,54 @@
+---
+title: "Setting Your Availability"
+description: "Configure your working hours and let the system know when you're available to meet."
+---
+
+Soul Care Manager uses your availability settings to power the public self-scheduling page, where prospective counselees can request appointments during your open slots. Getting this set up correctly means you'll only receive requests during times you're actually available.
+
+## Center-level vs. counselor-level availability
+
+Availability works at two levels:
+
+- **Center-level**: Your center administrator sets default working hours, days of the week, booking lead time, and booking window under Center Settings. These serve as the baseline for all counselors.
+- **Counselor-level**: Individual counselors can define their own weekly availability schedule, which overrides the center defaults for their specific slots.
+
+## Setting your weekly availability
+
+<Steps>
+  <Step title="Go to your Schedule">
+    Click **Schedule** in the sidebar.
+  </Step>
+  <Step title="Open Availability settings">
+    Look for the **Availability** or **My Availability** option.
+  </Step>
+  <Step title="Set your hours per day">
+    For each day you're available, set a start and end time. Toggle off any days you don't take appointments.
+  </Step>
+  <Step title="Save">
+    Your availability is now reflected on the public scheduling page.
+  </Step>
+</Steps>
+
+## Availability exceptions
+
+If you need to adjust your availability for a specific date — say, you're available earlier than usual one day or unavailable for part of an afternoon — you can add an availability exception for that date without affecting your regular schedule.
+
+Exceptions come in two types:
+- **Block**: removes a window of time from an otherwise available day
+- **Extra**: adds a window of time on an otherwise unavailable day
+
+## Time-off blocks
+
+For longer periods of unavailability — vacations, conferences, extended leave — use time-off blocks rather than availability exceptions. See [Time-Off Blocks](/scheduling/time-off-blocks) for details.
+
+## How the scheduler uses your availability
+
+When a prospective counselee visits your scheduling page, the system calculates open slots by combining:
+
+1. Your weekly availability
+2. Any exceptions for the requested date
+3. Your existing appointments (so slots already booked are hidden)
+4. Your time-off blocks
+5. The center's booking lead time and window settings
+
+Only genuinely open slots are shown — the counselee can't request a time that's already taken or outside your available hours.
