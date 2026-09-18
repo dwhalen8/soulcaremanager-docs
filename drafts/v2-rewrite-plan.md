@@ -125,6 +125,13 @@ the feature and wrong about the rule:
 | `billing/how-billing-works` | REPLACE | v2 has named plans (some per counselor, some flat), free trials, and a read-only state when a subscription lapses |
 | `billing/managing-your-subscription` | REWRITE | One subscription per practice |
 | `money/charging-counselees` | NEW | Pay links, card payments, receipts, statements — none of this is in the current docs |
+
+⚠ **Practice has THREE money cards and they are not the same thing** (confirmed
+on screen 2026-09-18). **Billing** is the standard session fee this practice
+charges a counselee; **Payments** is taking card payments through a connected
+Stripe account; **Subscription** is what the practice pays us. The first draft
+of `setting-up-your-practice` merged Billing and Subscription and had to be
+fixed — the money pages must keep them apart.
 | `practice/your-team` | NEW | Inviting staff, roles, removing someone, the last-admin rule |
 | `practice/consent-documents` | NEW | Versioned consent, recorded server-side |
 | `practice/audit-log-and-email-history` | NEW | What is recorded and how to read it |
@@ -152,12 +159,26 @@ center covers what a practice sees. Console notes belong in the app repo's
   against the **final** domain.
 - Publishing is David's call. Nothing here is pushed without it.
 
+## House terms, as the app spells them
+
+Match these exactly; the first draft got three of them wrong.
+
+- **Inquiries**, not enquiries (the Practice card is `INQUIRIES`)
+- **Center Admin**, **Counselor**, **Intake** are the role names on the invite
+- **Complete session** → confirmed with **Complete & lock**; a locked session
+  reads `Complete · locked` and offers **Add addendum**
+- **Addendum — add information** / **Correction — the record was wrong**
+- **My care** is the counselee's workspace
+
 ## Order of work
 
 1. ~~Delete the template leftovers and junk files~~ (done)
-2. Getting started + `index.mdx` + `docs.json` — sets the vocabulary every
-   other page borrows **(the exemplar; do this at the top model tier)**
-3. The rule pages, which are the ones that do harm if wrong: signing and
-   corrections, who can see what, which clock
-4. Then the feature groups, one at a time, each verified against the running
-   app rather than against v1's text
+2. ~~Getting started + `index.mdx` + `docs.json`~~ (done — the exemplar)
+3. ~~The rule pages: signing and corrections, who can see what, which clock~~
+   (done)
+4. ~~Verify 1–3 against the running app~~ (done 2026-09-18 —
+   `tools/exercise-docs-screens.mjs` in the app repo. Six corrections came out
+   of it, the worst being Billing/Subscription above)
+5. Then the feature groups, one at a time. **Photograph each surface before
+   writing it** — that is where every correction in step 4 came from, not from
+   reading the code.
