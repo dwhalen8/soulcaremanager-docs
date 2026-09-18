@@ -24,7 +24,7 @@
           "href": "https://soulcaremanager.com"
         },
         {
-          "anchor": "Sign In",
+          "anchor": "Sign in",
           "icon": "log-in",
           "href": "https://soulcaremanager.com/login"
         }
@@ -33,18 +33,19 @@
     "directory": "card",
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "Getting started",
         "icon": "rocket",
         "expanded": true,
         "pages": [
           "getting-started/introduction",
           "getting-started/logging-in",
           "getting-started/navigating-the-app",
+          "getting-started/starting-a-free-trial",
           "getting-started/setting-up-your-practice"
         ]
       },
       {
-        "group": "Counselee Management",
+        "group": "Counselees",
         "icon": "users",
         "pages": [
           "counselees/adding-a-counselee",
@@ -60,7 +61,8 @@
           "scheduling/creating-appointments",
           "scheduling/time-off-blocks",
           "scheduling/calendar-sharing",
-          "scheduling/appointment-reminders"
+          "scheduling/appointment-reminders",
+          "scheduling/which-clock"
         ]
       },
       {
@@ -68,6 +70,7 @@
         "icon": "notebook-pen",
         "pages": [
           "sessions/starting-a-session",
+          "sessions/signing-and-corrections",
           "sessions/session-modules",
           "sessions/session-templates",
           "sessions/joint-sessions",
@@ -75,7 +78,7 @@
         ]
       },
       {
-        "group": "Forms & Intake",
+        "group": "Forms & intake",
         "icon": "file-text",
         "pages": [
           "forms/the-default-pdi",
@@ -86,7 +89,7 @@
         ]
       },
       {
-        "group": "Resources & Homework",
+        "group": "Resources & homework",
         "icon": "book-open",
         "pages": [
           "resources/the-resource-library",
@@ -95,7 +98,7 @@
         ]
       },
       {
-        "group": "Physical Book Library",
+        "group": "Book library",
         "icon": "library",
         "pages": [
           "book-library/managing-your-inventory",
@@ -112,7 +115,7 @@
         ]
       },
       {
-        "group": "Counselee Portal",
+        "group": "Counselee portal",
         "icon": "layout-dashboard",
         "pages": [
           "portal/counselee-overview",
@@ -121,7 +124,7 @@
         ]
       },
       {
-        "group": "Files & Documents",
+        "group": "Files & documents",
         "icon": "paperclip",
         "pages": [
           "files/attaching-files",
@@ -129,11 +132,18 @@
         ]
       },
       {
-        "group": "Billing & Subscription",
+        "group": "Billing",
         "icon": "credit-card",
         "pages": [
           "billing/how-billing-works",
           "billing/managing-your-subscription"
+        ]
+      },
+      {
+        "group": "Privacy & security",
+        "icon": "lock",
+        "pages": [
+          "privacy/who-can-see-what"
         ]
       }
     ]
@@ -146,8 +156,8 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Go to App",
-      "href": "https://app.soulcaremanager.com"
+      "label": "Go to app",
+      "href": "https://soulcaremanager.com/login"
     }
   },
   "footer": {

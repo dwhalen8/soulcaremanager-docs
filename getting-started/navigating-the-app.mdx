@@ -1,42 +1,55 @@
 ---
-title: "Navigating the App"
-description: "A quick tour of the Soul Care Manager interface."
+title: "Finding your way around"
+description: "Workspaces, cards, drawers and the command palette."
 ---
 
-## The sidebar
+Soul Care Manager is built out of a handful of **workspaces** rather than a long list of pages. You work inside one; detail opens on top of it and closes again, leaving you where you were.
 
-The sidebar on the left is your main navigation. What you see depends on your role — counselors see their own caseload and schedule, while center admins see additional tools for managing the practice.
+## The workspaces
 
-The main sections are:
+What you see depends on the role you're signed in as. Nothing is shown greyed-out — if it isn't yours to do, it isn't on your screen.
 
-| Section | What's there |
+| Workspace | What it's for |
 |---|---|
-| **Dashboard** | A summary of upcoming appointments, recent activity, and announcements |
-| **Counselees** | Your full caseload — add, search, and open individual records |
-| **Schedule** | Your calendar, appointments, and time-off blocks |
-| **Sessions** | A list of all sessions, past and upcoming |
-| **Notes** | A journal of notes and completed sessions across all counselees |
-| **Forms** | Intake forms and submissions |
-| **Resources** | Your resource and homework library |
-| **Book Library** | Physical books your center lends to counselees |
-| **Settings** | Your profile, notification preferences, and center settings (admins) |
+| **Today** | One list of what needs you today — appointments, unsigned notes, overdue homework, anything waiting |
+| **Counselees** | The people you care for. Open anyone to reach their record and their case or cases |
+| **Session** | The screen you have open during an actual session: timer, notes, homework |
+| **Schedule** | The calendar — appointments, repeating series and time off |
+| **Practice** | Everything about the practice itself: your team, your profile, branding, the library, forms, billing, reports, settings |
+| **My care** | What a counselee sees when they sign in. Staff don't have this one |
 
-## Opening a counselee record
+<Note>
+  Counselors see Today, Counselees, Session, Schedule and Practice. Administrators see the same minus Session — an administrator who doesn't counsel has nothing to do there. Intake staff see Today, Counselees, Schedule and Practice.
+</Note>
 
-Click any counselee's name from the Counselees list to open their record. From there you can view their profile, appointments, notes, forms, files, supervision logs, and more — all in one place organized by tabs.
+## Cards, and what's underneath them
 
-## Switching roles
+Every workspace is built from cards, and every card works the same way: a title, the one action you're most likely to want, a **⋯** menu for the rest, and detail you can expand.
 
-If your account has more than one role (for example, you are both a counselor and a center admin), you'll see a role switcher at the bottom of the sidebar. Clicking it lets you switch between roles without logging out.
+Open something and it slides in as a **drawer** over the workspace rather than sending you to a new page. Close it and you're back where you were, scrolled to the same place. This is why there's no "back to the calendar" trail to follow — you never left.
 
-Switching roles changes what you can see and do. If you're on the Schedule page as a counselor and switch to your admin role, you stay on the Schedule page — just with the broader admin view.
+**Practice** is the biggest of these: one page of cards covering your team, your own profile and passkeys, your resource and book libraries, form and intake packet templates, reminders, billing, the audit log, and your practice's settings. Cards you have no business with don't appear, so an administrator's Practice page and a counselor's look quite different.
 
-## The counselee portal
+## Get anywhere with ⌘K
 
-The counselee portal is a separate, simplified interface your counselees use to log in. It looks different from the main app by design — counselees only see their own appointments, homework, forms, and documents.
+Press <kbd>⌘K</kbd> (or <kbd>Ctrl</kbd>+<kbd>K</kbd> on Windows) from anywhere in the app to open the command palette. Start typing and it finds counselees, screens and actions. Nothing in the app is more than a few keystrokes away, which is often faster than clicking to it.
 
-If your account includes a client role (for example, you're also receiving counseling), you can switch to the portal view the same way you switch any other role.
+<Tip>
+  The palette only ever offers what your role can actually do. If you can't find an action there, it isn't yours to do rather than hidden somewhere else.
+</Tip>
 
-## Getting help
+## If you wear more than one hat
 
-Every page in the app has a **Contact** option in the sidebar for reaching the platform team, and a **Report a Bug / Request a Feature** option that goes directly to the development queue.
+Some people hold more than one role at a practice — counselor and administrator, say. Your role is shown in the app, and you can switch between them. Switching changes what you can see and do, so switch to the role you're actually acting as.
+
+If you work at more than one practice, you can switch between practices the same way, without signing out. Only one practice's records are ever on screen at once.
+
+## Times and clocks
+
+**Today** and **Schedule** draw on your own clock, wherever you happen to be. The clinical record — sessions and their corrections — stays on the practice's clock, because that's the time being billed against and read back years later.
+
+That means the same session can read 2:00 on your Schedule and 3:00 on the session record if you're travelling. Nothing is wrong: every screen that shows a session time says which clock it's using.
+
+<Card title="Which clock is which" icon="clock" href="/scheduling/which-clock">
+  When the two differ and why.
+</Card>
