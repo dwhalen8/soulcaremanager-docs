@@ -26,7 +26,7 @@
         {
           "anchor": "Sign in",
           "icon": "log-in",
-          "href": "https://soulcaremanager.com/login"
+          "href": "https://app.soulcaremanager.com/login"
         }
       ]
     },
@@ -40,8 +40,8 @@
           "getting-started/introduction",
           "getting-started/logging-in",
           "getting-started/navigating-the-app",
-          "getting-started/starting-a-free-trial",
-          "getting-started/setting-up-your-practice"
+          "getting-started/setting-up-your-practice",
+          "getting-started/starting-a-free-trial"
         ]
       },
       {
@@ -50,15 +50,16 @@
         "pages": [
           "counselees/adding-a-counselee",
           "counselees/counselee-statuses",
-          "counselees/assigning-counselors"
+          "counselees/assigning-counselors",
+          "counselees/inquiries"
         ]
       },
       {
         "group": "Scheduling",
         "icon": "calendar",
         "pages": [
-          "scheduling/setting-your-availability",
           "scheduling/creating-appointments",
+          "scheduling/setting-your-availability",
           "scheduling/time-off-blocks",
           "scheduling/calendar-sharing",
           "scheduling/appointment-reminders",
@@ -66,15 +67,16 @@
         ]
       },
       {
-        "group": "Sessions",
+        "group": "Sessions and notes",
         "icon": "notebook-pen",
         "pages": [
           "sessions/starting-a-session",
+          "sessions/writing-notes",
           "sessions/signing-and-corrections",
           "sessions/session-modules",
-          "sessions/session-templates",
+          "sessions/follow-ups",
           "sessions/joint-sessions",
-          "sessions/follow-ups"
+          "sessions/recording-a-session"
         ]
       },
       {
@@ -84,8 +86,7 @@
           "forms/the-default-pdi",
           "forms/building-a-custom-form",
           "forms/sending-a-form",
-          "forms/reviewing-submissions",
-          "forms/exporting-submissions"
+          "forms/reviewing-submissions"
         ]
       },
       {
@@ -98,7 +99,7 @@
         ]
       },
       {
-        "group": "Book library",
+        "group": "Lending library",
         "icon": "library",
         "pages": [
           "book-library/managing-your-inventory",
@@ -107,11 +108,11 @@
         ]
       },
       {
-        "group": "Supervision",
+        "group": "ACBC certification",
         "icon": "shield-check",
         "pages": [
-          "supervision/logging-supervision-hours",
-          "supervision/acbc-progress-tracking"
+          "supervision/acbc-progress-tracking",
+          "supervision/logging-supervision-hours"
         ]
       },
       {
@@ -120,6 +121,7 @@
         "pages": [
           "portal/counselee-overview",
           "portal/inviting-counselees",
+          "portal/messages",
           "portal/prayer-requests"
         ]
       },
@@ -132,11 +134,22 @@
         ]
       },
       {
-        "group": "Billing",
+        "group": "Money",
         "icon": "credit-card",
         "pages": [
+          "billing/charging-counselees",
           "billing/how-billing-works",
           "billing/managing-your-subscription"
+        ]
+      },
+      {
+        "group": "Your practice",
+        "icon": "building",
+        "pages": [
+          "practice/your-profile",
+          "practice/announcements",
+          "practice/reports",
+          "practice/audit-log-and-email-history"
         ]
       },
       {
@@ -157,10 +170,20 @@
     "primary": {
       "type": "button",
       "label": "Go to app",
-      "href": "https://soulcaremanager.com/login"
+      "href": "https://app.soulcaremanager.com/login"
     }
   },
   "footer": {
     "socials": {}
-  }
+  },
+  "redirects": [
+    {
+      "source": "/sessions/session-templates",
+      "destination": "/sessions/follow-ups"
+    },
+    {
+      "source": "/forms/exporting-submissions",
+      "destination": "/forms/reviewing-submissions"
+    }
+  ]
 }
