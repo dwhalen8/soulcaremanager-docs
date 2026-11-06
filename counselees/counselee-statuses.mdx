@@ -1,42 +1,53 @@
 ---
-title: "Counselee Statuses"
-description: "Understanding active, prospective, and archived counselees."
+title: "Cases and statuses"
+description: "A counselee is a person at your practice; each course of care is a case inside their record."
 ---
 
-Every counselee in Soul Care Manager has a status that reflects where they are in the counseling relationship. Status affects how a counselee appears in your list and what actions are available on their record.
+Soul Care Manager keeps two things apart that paper files tend to merge:
 
-## The three statuses
+- **The counselee** is a person at your practice. They have one record, with their contact details, intake forms, files and history.
+- **A case** is one course of care. It holds who's being counseled, which counselor holds it, the sessions, a care plan and, at the end, a discharge. A counselee can have several cases over the years, and a couple or family shares one case.
+
+## Statuses
+
+The status filter on the **Counselees** list has four statuses. Choose **All statuses** to see everyone.
 
 | Status | Meaning |
 |---|---|
-| **Active** | Currently in regular sessions |
-| **Prospective** | Has reached out or submitted intake paperwork but hasn't started regular sessions yet |
-| **Archived** | No longer receiving counseling; record is retained but removed from your active list |
+| **Prospective** | Has reached out (an inquiry, say) but hasn't been accepted yet |
+| **Active** | Being counseled at your practice |
+| **Inactive** | A former counselee carried over from your earlier records |
+| **Archived** | Taken out of your lists. Everything is kept, and **Unarchive** brings it back |
 
-## Prospective counselees
+A prospective counselee who has been assigned to you shows **Accept as a counselee** at the top of their record. Only the counselor who holds them can accept them; an administrator routes inquiries but doesn't accept on a counselor's behalf.
 
-A counselee is created as prospective when they come in through the intake invite flow or the public scheduling page. Once you've had an initial meeting and decided to take them on, change their status to active.
+## Starting a case
 
-Prospective counselees appear in your counselee list but are visually distinguished from active counselees so your working caseload stays clear.
+On the record's **Overview**, under **Cases**, click **Start a case** and give it a presenting focus (what the counseling is about). It's optional, and you can change it later with **Edit focus**.
 
-## Archiving a counselee
+A case page has these parts:
 
-When a counseling relationship ends, archive the counselee rather than deleting them. Archiving:
+- **Case**: the presenting focus and the date it opened.
+- **Care plan**: the goals the case is working towards. See [Follow-ups and care plans](/sessions/follow-ups).
+- **Roster**: who's being counseled on this case. **Add counselee** brings in a spouse or family member; **End** takes someone off. The roster is kept as history, so you can always see who was on the case and when.
+- **Counselor of record**: who holds the case. See [Assigning counselors](/counselees/assigning-counselors).
+- **Sessions**: every session on the case, in order, numbered for you.
+- **Intake**: the intake forms filed on this case.
+- **Discharge**: closing the case.
 
-- Removes them from your active counselee list
-- Preserves all their notes, sessions, forms, files, and history
-- Allows you to reactivate them later if they return
+## Discharging a case
 
-To archive a counselee, open their record and use the **Archive** option. You'll be asked to confirm before the action takes effect.
+When the counseling ends, click **Discharge case**. You choose why it ended (**Goals met**, **Referred out**, **Counselee withdrew**, **Lost contact**, **Relocated**, **Non-compliance** or **Other**) and write a closure summary. Both are locked once saved.
 
-<Note>
-  Archiving is reversible. If a former counselee returns, you can restore their record and all prior history will still be there.
-</Note>
+A discharged case can be opened again with **Reopen case** if the counselee returns. The reopening is stamped too, so the history shows both.
 
-## Reactivating a counselee
+## Archiving
 
-To restore an archived counselee, filter your counselee list to show archived records, open the record, and change their status back to active.
+- **A case** can be archived from its **⋯** menu (**Archive case**), and **Unarchive case** reverses it.
+- **A counselee** is archived from the **Details** tab. Unarchiving puts them back exactly as they were: a dismissed inquiry returns to the inquiry list, for example.
 
-## A note on permanent deletion
+Neither deletes anything. There is no permanent delete for counseling records.
 
-Permanent deletion is available to center admins for duplicate or test records only. Unlike archiving, deletion cannot be undone — all associated notes, sessions, forms, and files are removed permanently. Use it with care.
+## Merging two cases
+
+If two cases should have been one (a couple's case opened twice, or two individual cases that became a couple's), an administrator opens the case to keep and chooses **Merge another case into this one** from its **⋯** menu. The other case's notes, sessions, files, homework, appointments and charges move to this case, its counselees and counselors join it, and it's closed as merged. Only open cases can be merged, and a merge can't be undone, so the app asks you to confirm first.

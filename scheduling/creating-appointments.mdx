@@ -1,70 +1,60 @@
 ---
-title: "Creating Appointments"
-description: "Schedule one-time and recurring sessions for your counselees."
+title: "Creating appointments"
+description: "One-time and repeating appointments, and what happens when you change or cancel one."
 ---
 
-## Create an appointment
+The **Schedule** shows your calendar by **Day**, **Week** or **Month**, with **←**, **Today** and **→** to move through it. The line at the top, *Times shown in America/Chicago*, says which clock the calendar is drawn on: yours. See [Which clock is which](/scheduling/which-clock).
+
+A repeating appointment shows **↻** beside its name, and your time off shows as **Blocked**.
+
+## Book an appointment
 
 <Steps>
-  <Step title="Open your Schedule">
-    Click **Schedule** in the sidebar and navigate to the date you want.
+  <Step title="Click New appointment">
+    Above the calendar, or the **+** on any day to start on that date. From a counselee's record, **Book appointment** does the same with them already chosen.
   </Step>
-  <Step title="Click to add an appointment">
-    Click the **New Appointment** button or click directly on a time slot in the calendar.
+  <Step title="Choose the date, start time and length">
+    The start time is in the practice's time zone, and the box says which (*Start (America/Chicago)*).
   </Step>
-  <Step title="Fill in the details">
-    Select the counselee, set the start and end time, choose a session type, and add a location if needed.
+  <Step title="Choose the counselee and case">
+    Start typing a name to find a counselee. **Case** lists your open cases, including couple and family cases, so you can book a joint appointment by choosing the shared case.
   </Step>
-  <Step title="Save">
-    The appointment appears on your calendar immediately.
+  <Step title="Add a location or video link (optional)">
+    A **Video call link** is shown to the counselee in their portal and on your own calendar feed, with a **Join call** button on the appointment.
+  </Step>
+  <Step title="Set it to repeat (optional)">
+    Tick **Repeats** and choose **Weekly**, **Monthly** or **Yearly**, how often (**Every** 2 weeks, say), and when it ends.
+  </Step>
+  <Step title="Click Schedule">
+    If the time clashes with another appointment or your time off, the app tells you before booking, and lets you book anyway if you mean to.
   </Step>
 </Steps>
 
-## Appointment details
+## Repeating appointments
 
-| Field | Notes |
-|---|---|
-| **Counselee** | Required. Start typing to search your caseload. |
-| **Session type** | The kind of session (initial, follow-up, etc.) |
-| **Location** | Optional. Recent locations are suggested as you type. |
-| **Additional counselees** | For joint sessions with couples or families — add more than one counselee to a single appointment. |
-| **Paid** | Mark whether the session has been paid for. |
-| **Private** | Private appointments are hidden from other counselors when your calendar is shared. |
+A repeating appointment is stored as a rule ("every Tuesday at 10:00"), not as a long list of copies. Each occurrence appears on the calendar, and becomes an appointment of its own the moment you change it. That's why a repeating series stays at the same wall-clock time across daylight-saving changes.
 
-## Recurring appointments
+## Opening an appointment
 
-To set up a repeating appointment:
+Click an appointment and it opens in a panel beside the calendar, which stays live. The panel shows when it is, the counselor, its status, the location, who's attending and how it repeats. From there:
 
-<Steps>
-  <Step title="Create the appointment">
-    Fill in the details as normal.
-  </Step>
-  <Step title="Enable recurrence">
-    Toggle on **Recurring** and choose the frequency: weekly, bi-weekly, or monthly.
-  </Step>
-  <Step title="Set an end date">
-    Choose when the recurrence should stop.
-  </Step>
-  <Step title="Save">
-    Soul Care Manager creates all the future occurrences at once.
-  </Step>
-</Steps>
+- **Edit** changes the time, length, location or counselee. On a repeating appointment, you choose **This appointment only** or **This and all following**.
+- **Status** marks it **Scheduled**, **Completed**, **No-show** or cancelled.
+- **Send reminder now** sends the reminder early, if it hasn't gone yet.
+- **Counts as a full session** decides how it's numbered on the case: **Automatic** (a whole number when everyone on the case was there), **Yes** or **No** (a part number, such as 2.1).
+- **End series…**, in the **⋯** menu, stops a repeating appointment from a date you choose.
 
-## Editing a recurring appointment
+## What the counselee is told
 
-When you edit or cancel a recurring appointment, you'll be asked whether you want to change just this one occurrence or all future occurrences from this point forward.
+- **Moving** a scheduled appointment to a new time that's still ahead emails the counselee the new time. Changing the whole series sends one email, not one per occurrence.
+- **Cancelling** asks you to confirm, because each counselee with an email address on file is emailed that it was cancelled. Putting it back to Scheduled later doesn't unsend that email.
 
-- **This occurrence only** — changes just the selected date; the rest of the series is untouched
-- **This and all future occurrences** — updates every upcoming appointment in the series
+Neither email says anything about the counseling: only the date, time and practice.
 
-## Cancelling an appointment
+## Nothing is deleted
 
-To cancel an appointment, open it from the calendar and select **Cancel**. You'll be prompted to enter a cancellation reason, which is saved on the appointment record and visible in the Session View.
+Cancelled appointments stay on the calendar's history so the record is complete. There's no way to delete one.
 
-<Note>
-  Cancelled appointments are not deleted — they stay on the record so the history is complete. If you want to remove an appointment entirely, delete it instead of cancelling it.
-</Note>
+## Bookings from counselees
 
-## Appointment reminders
-
-Soul Care Manager can automatically email counselees a reminder before each session. See [Appointment Reminders](/scheduling/appointment-reminders) for how to configure them.
+If your practice offers online booking, counselees can book from a link or their portal, during your [booking hours](/scheduling/setting-your-availability). A booking is always made on one of the counselee's open cases, with that case's counselor. If **Confirm each booking before it is final** is on, the request waits on your **Today** list as a **Booking request** until you **Confirm** or **Decline** it.
