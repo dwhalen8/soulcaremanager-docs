@@ -1,50 +1,34 @@
 ---
-title: "Appointment Reminders"
-description: "Automatic email reminders sent to counselees before their sessions."
+title: "Appointment reminders"
+description: "Automatic reminder emails before each appointment, and what they say."
 ---
 
-Soul Care Manager can automatically send counselees an email reminder before each scheduled appointment. Reminders are sent based on each counselor's configured lead time.
+Soul Care Manager emails each counselee a reminder before their appointment. A reminder gives **the date, time and practice name only**: never a name, a location or what the appointment is about.
 
-## How reminders work
+## How far ahead
 
-When an appointment is coming up, the system checks whether a reminder should go out based on the counselor's **reminder hours** setting. If the appointment falls within that window and a reminder hasn't been sent yet, it goes out automatically.
+Go to **Practice → Scheduling** and click **Reminder settings**. **Send reminders this many hours ahead** is your own setting, between 1 and 168 hours (one week), and applies to your own counselees.
 
-Reminders include:
-- The appointment date and time (in the counselee's timezone)
-- The session type and location (if set)
-- Your center's branding
+An administrator also sees **Send appointment reminders for this practice**. Turning it off silences reminders for everyone at the practice, whatever each counselor has set.
 
-## Configure your reminder timing
+## One counselee at a time
 
-Each counselor sets how many hours before an appointment their reminders go out.
+On a counselee's record, the **Details** tab has **Send appointment reminder emails**. Untick it and that counselee gets no reminders. A counselee with a portal login can change this themselves in their portal profile.
 
-<Steps>
-  <Step title="Open your profile">
-    Click your name at the bottom of the sidebar.
-  </Step>
-  <Step title="Find Appointment Reminders">
-    Look for the reminder hours setting in your notification preferences.
-  </Step>
-  <Step title="Set your preferred lead time">
-    Common choices are 24 hours or 48 hours before the appointment.
-  </Step>
-  <Step title="Save">
-    All future reminders will go out at the new timing.
-  </Step>
-</Steps>
+This switch is for reminders only. A cancelled or moved appointment, a booking answer and a payment link still go to the email on file.
 
-## Turn off reminders for a specific counselee
+## Sending one early
 
-If a counselee prefers not to receive reminders, you can disable them on a per-counselee basis.
+Open the appointment on the Schedule. Under **Reminder**, the panel says whether it has gone yet, and **Send reminder now** sends it straight away.
 
-Open the counselee's record, find the **Appointment Reminders** toggle in their profile, and turn it off. Reminders will no longer be sent for that person regardless of your counselor-level setting.
+## When a time changes
 
-## Send a reminder manually
+Moving an appointment resets its reminder, so the counselee is reminded of the new time, not the old one.
 
-If you want to send a reminder outside the automatic schedule — for example, if a counselee seems likely to forget — you can trigger one manually from the appointment.
+## Checking what went out
 
-Open the appointment from your calendar and use the **Send Reminder** option. A reminder email goes out immediately.
+The **Email history** card on the counselee's **Details** tab lists what was sent to them and whether it was delivered, without the message itself. Administrators can see every email in **Practice → Records → Email history**.
 
-<Note>
-  Manual reminders can be sent even if automatic reminders are turned off for that counselee.
-</Note>
+## Text message reminders
+
+Text reminders are built but switched off for now. They'll be available once the phone carriers approve Soul Care Manager's registration. Until then, the texting options don't appear anywhere in the app.

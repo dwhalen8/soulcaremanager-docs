@@ -1,39 +1,48 @@
 ---
-title: "How Billing Works"
-description: "Soul Care Manager is billed per active counselor seat on a monthly or annual basis."
+title: "How billing works"
+description: "What your practice pays for Soul Care Manager, and what happens if a subscription lapses."
 ---
 
-Soul Care Manager uses per-seat billing through Stripe. Each active counselor or center admin at your practice counts as one seat, and you're billed based on how many seats you have.
+<Note>
+  This page is about what your practice pays **us**. For charging your counselees, see [Charging counselees](/billing/charging-counselees).
+</Note>
 
-## What counts as a seat
+Your practice's subscription lives in **Practice → Billing → Subscription**, and only administrators see it.
 
-A seat is any active user with the **counselor** or **center admin** role. Other roles — intake staff and counselees — do not count toward your seat total.
+## Founding practices
 
-Seats are counted automatically. When you add a new counselor or admin, your subscription quantity updates at the next billing cycle. When someone is deactivated, that seat is released.
+Practices that moved to this version of Soul Care Manager from the original one are on the **Founding Practice** plan. Nothing is limited, and there's nothing to pay or set up. Founding Practice is set by Soul Care Manager, not from this screen.
 
-## Billing intervals
+## The plans
 
-You can choose to be billed **monthly** or **annually**. Annual billing is available at a discounted rate compared to paying month to month.
+| Plan | Price | For |
+|---|---|---|
+| **Practice** | $29 per counselor a month, or $290 per counselor a year (two months free) | Most practices |
+| **Ministry** | $59 a month, or $590 a year, for any number of counselors | Churches and registered nonprofits |
 
-To see current pricing, go to **Settings → Billing** in the app. Pricing is shown for both intervals so you can compare before subscribing.
+On the Practice plan, a **counselor** is anyone on your team who holds the Counselor role. Administrators and intake staff who don't counsel aren't counted. When you invite a counselor, the invitation says what it will add to your bill, and the change is invoiced straight away.
 
-## Subscription states
+The Subscription page shows your plan, how many people are on your team and how many are counselors, and how much you're storing.
 
-| State | What it means |
-|---|---|
-| **Active** | Subscription is current; full access to all features |
-| **Trialing** | In a free trial period; full access |
-| **Past due** | A payment failed; a banner appears in the app but access continues temporarily |
-| **Canceled** | Subscription has ended; access is restricted |
+## Paying
 
-If your subscription lapses, you'll see a notification in the app with instructions for how to reactivate.
+Payment is taken by **Stripe**, and Stripe sends the invoices and receipts. Your card details go to Stripe, never to us.
 
-## Free access accounts
+## Free trials
 
-Some centers — ministry partners, comped accounts, or centers in special arrangements — are marked as free access by the Soul Care Manager team. Free access accounts bypass subscription gating entirely and don't need an active Stripe subscription.
+A new practice can start with a 30-day trial of the Practice plan (when sign-up is open). See [Starting a free trial](/getting-started/starting-a-free-trial).
 
-If you believe your center qualifies, contact us through the app.
+## If a subscription lapses
 
-## Taxes and invoices
+If a trial ends unpaid, or a subscription is cancelled and runs out, your practice becomes **read-only**:
 
-Stripe handles tax calculation and invoicing. Invoices are available through the Stripe customer portal, which you can access from **Settings → Billing → Manage Subscription**.
+- Nothing is lost, and nobody is locked out. Every record stays readable, and work already begun can be finished.
+- New work pauses: no new counselee, case, appointment, repeating appointment, note, session or bill.
+- Your public doors close for new work: the website inquiry form, booking links, and counselees' new portal messages, prayer requests and bookings.
+- Money you're already owed can still be collected.
+
+Today and the portal both say the practice is read-only. Subscribing restores everything straight away; Today's **Subscribe and restore** takes you there.
+
+## Leaving
+
+You can download a complete copy of your practice's records at any time: **Practice → Records → Account and records → Download all records**. That stays available while the practice is read-only.

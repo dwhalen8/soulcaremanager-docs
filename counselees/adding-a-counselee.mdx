@@ -1,59 +1,52 @@
 ---
-title: "Adding a Counselee"
-description: "How to create a new counselee record in Soul Care Manager."
+title: "Adding a counselee"
+description: "Start a record with a name and an email, and let the intake form fill in the rest."
 ---
 
-There are three ways a counselee can enter the system: you add them manually, they submit a public intake form, or they come in as a prospective counselee through the public scheduling page.
+A counselee's record starts small: a name, and usually an email address. The intake form they fill in completes the rest of it. There are three ways someone arrives:
 
-## Add a counselee manually
+- **You add them**, from **Counselees**.
+- **They fill in your website inquiry form**, and arrive in **Practice → Intake → Inquiries**. See [Inquiries](/counselees/inquiries).
+- **They fill in a counselor's own inquiry link**, and arrive straight on that counselor's caseload.
+
+## Add a counselee
 
 <Steps>
-  <Step title="Go to Counselees">
-    Click **Counselees** in the sidebar.
+  <Step title="Open Counselees">
+    Click **Counselees** at the top of the screen, then **Add counselee** above the list. (Or press <kbd>⌘K</kbd> and type *Add counselee*.)
   </Step>
-  <Step title="Click Add Counselee">
-    Use the button in the top right corner of the counselee list.
+  <Step title="Enter their name, email and phone">
+    Only the first and last name are required. Give an email address if you'll be sending them anything, including their intake form or a portal invitation.
   </Step>
-  <Step title="Fill in their details">
-    At minimum you'll need a first and last name. You can also add contact information, address, marital status, number of children, emergency contact, church, and pastor's name.
+  <Step title="Choose the intake form to email">
+    With an email address entered, **Intake form to email** appears, set to your practice's intake form. Pick another form, or **Don't send a form now**.
   </Step>
-  <Step title="Save">
-    Click **Save** to create the record. The counselee is added as active and assigned to you.
+  <Step title="Add and email the form">
+    The button says what it will do: **Add and email the form**, or **Add counselee** if you're not sending one. Afterwards the screen tells you exactly what happened: the form emailed to their address and the date its link stops working, or why it couldn't be sent.
   </Step>
 </Steps>
 
-## Add via intake invite
+<Note>
+  The email says only that a form is waiting, with no name and no practice details. Everything they fill in stays behind the link.
+</Note>
 
-If you want to send someone a PDI before their first session, use the intake invite flow instead of creating the record manually.
+If the email couldn't go out (a mistyped address, say), the screen shows the link itself once so you can send it another way. Otherwise, correct the address on their record and send the form again from the **Intake** tab.
 
-<Steps>
-  <Step title="Go to Counselees">
-    Click **Counselees** in the sidebar.
-  </Step>
-  <Step title="Click Send Intake Invite">
-    Enter the prospective counselee's name and email address.
-  </Step>
-  <Step title="Send the invite">
-    Soul Care Manager creates a prospective counselee record and emails them a link to complete the PDI. Once they submit it, their profile is automatically populated with their responses.
-  </Step>
-</Steps>
+## What the intake form fills in
 
-<Tip>
-  If your center has **Auto-send PDI** enabled, a PDI link is automatically emailed to every new counselee you add manually — no extra steps needed.
-</Tip>
+When the counselee submits their form, it fills in the record's **blank** details itself: date of birth, address, phone and the rest. It never overwrites anything already on the record. Where an answer differs from what's there, the record offers the change and you choose whether to take it.
 
-## What gets created automatically
+## Who they belong to
 
-When a new counselee is added (manually or via intake), Soul Care Manager can:
+- **A counselor** who adds a counselee gets a case for them straight away, with themselves as counselor, so the new counselee is on their caseload at once.
+- **An administrator or intake staff** who adds a counselee creates the record only. Start a case from the record and assign a counselor; until then, no counselor can see them.
 
-- Create a prospective record with their name and email
-- Send them a PDI link (if auto-send is on)
-- Auto-populate their profile fields when they submit the form (phone, address, church, pastor, etc.)
+See [Cases and statuses](/counselees/counselee-statuses) and [Assigning counselors](/counselees/assigning-counselors).
 
 ## Profile photo
 
-You can upload a profile photo for any counselee to make them easier to recognize at a glance. From their record, look for the avatar area near their name and click to upload. Photos are private — they are not visible to the counselee.
+On the record's **Details** tab, under **Identity**, click **Change photo** to add a picture that helps your team recognize them (PNG, JPEG, WEBP or an iPhone photo, up to 512 KB). The photo is for staff only.
 
-## Permanent delete
+## Nothing is deleted
 
-Archived counselees can be permanently deleted by center admins. This is gated behind an explicit confirmation step and is intended only for duplicate or test records. All other counselees should be archived rather than deleted so their history is preserved.
+There's no way to delete a counselee. When the counseling ends, discharge their cases; if the record shouldn't be in your lists at all (a duplicate, say), **Archive** it from the **Details** tab. Archiving is undone with **Unarchive**, and every note, session and form is still there.

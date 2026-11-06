@@ -1,49 +1,53 @@
 ---
-title: "Assigning Counselors"
-description: "How counselor assignments work for individual counselees."
+title: "Assigning counselors"
+description: "Who holds a case, how that changes, and who can see what as a result."
 ---
 
-Soul Care Manager is built for centers where more than one counselor sees counselees. Each counselee can have a primary counselor, a co-counselor, and additional counselors for joint sessions — and can be reassigned without losing any history.
+In Soul Care Manager, **a counselor sees a counselee because a case puts them together.** There's no "counselor" field on the counselee's profile to edit: the case's **Counselor of record** decides whose caseload a counselee is on.
 
-## Primary counselor
+## Primary and co-counselor
 
-Every counselee has one primary counselor. This is the person responsible for the counseling relationship. By default, the counselor who creates the counselee record is set as the primary counselor.
+Every case has one **primary** counselor, who holds it. A case can also have **co-counselors**, for example when two counselors see a couple together. A co-counselor can read the case's sessions and notes, but each counselor writes only their own.
 
-To change the primary counselor, open the counselee's record and edit the **Counselor** field in their profile.
+Only someone with the **Counselor** role can be on a case. An administrator who also counsels needs both roles.
 
-## Co-counselor
+## Assigning a counselor
 
-A co-counselor can be added to a counselee's record when two counselors are working together on a case. Co-counselors have the same access to the counselee's record as the primary counselor.
+On the case page, under **Counselor of record**, click **Assign counselor**, choose the person, and choose primary or co-counselor.
 
-## Additional counselors for joint sessions
+- **Setting the primary counselor** is an administrator's decision, because it moves the case from one caseload to another.
+- **A counselor can add a co-counselor** to their own case.
+- **Nobody assigns themselves** except an administrator. A counselor can't put themselves on someone else's case.
 
-When scheduling a joint session (for couples, families, or group meetings), you can include additional counselees and counselors on a single appointment. Each counselor sees their own notes tab within the shared session view.
+When a new primary takes over, the previous one comes off the case.
+
+## History, not overwrites
+
+Assignments are never edited in place. Each one has a start and, when it ends, an end, so the case always shows who held it and when. A counselor who comes off a case stops seeing it from that moment; everything they wrote stays in the record under their name.
+
+## Future appointments go with the change
+
+If the counselor coming off a case has appointments still to come on it, the app asks what to do with them before it goes through:
+
+- **Move them** to another counselor, keeping the same times (checked for clashes on the new counselor's calendar), or
+- **Cancel them**, which ends any repeating series and tells the counselee.
+
+It won't go through until you choose. The same question comes up when someone is removed from the practice or loses the Counselor role.
+
+## Read access for another counselor
+
+Sometimes a counselor needs to read a case they don't hold: covering for a colleague, or a case review. An administrator can open the case's **⋯** menu and choose **Give a counselor read access**.
+
+<Warning>
+  Read access opens the **case record only**: its focus, roster, counselors and discharge. It never opens the case's notes, sessions, files, measurements, homework, care plan, messages or prayer requests, and never a counselor's supervision journal. Those stay with the counselors who hold the case.
+</Warning>
+
+Access can be revoked from the same place at any time.
 
 ## Who can see which counselees
 
-Access to counselee records is scoped by role:
+- **Counselors** see the counselees on their own cases, and nobody else.
+- **Center Admins** see every counselee's record, but reading clinical content (notes, sessions, safety notes) asks for a reason. The reason is recorded, and the counselors are told. See [Who can see what](/privacy/who-can-see-what).
+- **Intake staff** see records and send forms, but never clinical content or form answers.
 
-- **Counselors** can only see counselees assigned to them as primary counselor, co-counselor, or additional counselor
-- **Center admins** can see all counselees in the center
-
-This means a counselor cannot accidentally view another counselor's caseload, and reassigning a counselee changes whose list they appear on immediately.
-
-## Reassigning a counselee
-
-To reassign a counselee to a different primary counselor:
-
-<Steps>
-  <Step title="Open the counselee record">
-    Click the counselee's name from your list.
-  </Step>
-  <Step title="Edit their profile">
-    Find the **Counselor** field and select the new primary counselor from the dropdown.
-  </Step>
-  <Step title="Save">
-    The counselee now appears on the new counselor's list. All prior notes, sessions, and history are preserved.
-  </Step>
-</Steps>
-
-<Note>
-  Reassigning a counselee does not notify the new counselor automatically. Let them know directly so they can review the case history before meeting with the counselee.
-</Note>
+Because access follows the case, reassigning a case changes whose list a counselee appears on immediately.

@@ -1,54 +1,40 @@
 ---
-title: "Setting Your Availability"
-description: "Configure your working hours and let the system know when you're available to meet."
+title: "Setting your availability"
+description: "Booking hours decide what a counselee can pick when they book themselves in."
 ---
 
-Soul Care Manager uses your availability settings to power the public self-scheduling page, where prospective counselees can request appointments during your open slots. Getting this set up correctly means you'll only receive requests during times you're actually available.
+**Booking hours** are the days and times counselees can book online. Booking hours don't stop *you* from booking anything: you can put an appointment at any time from the Schedule. They govern what a counselee is offered.
 
-## Center-level vs. counselor-level availability
+Find them in **Practice → Scheduling → Booking hours** (or press <kbd>⌘K</kbd> and type *Booking hours*).
 
-Availability works at two levels:
+## The practice's hours and your own
 
-- **Center-level**: Your center administrator sets default working hours, days of the week, booking lead time, and booking window under Center Settings. These serve as the baseline for all counselors.
-- **Counselor-level**: Individual counselors can define their own weekly availability schedule, which overrides the center defaults for their specific slots.
+- **This practice's hours** are used by every counselor who hasn't set hours of their own. An administrator sets them.
+- **My hours** starts out saying *You are using the practice's hours*. Choose **Use my own hours** to set your own, starting from a copy of the practice's.
 
-## Setting your weekly availability
+Each set of hours is a list of bands: a day, a start and an end, in the practice's time zone. Add one with **Add hours**. To take Wednesday afternoons off, for example, give Wednesday a band that ends at noon.
 
-<Steps>
-  <Step title="Go to your Schedule">
-    Click **Schedule** in the sidebar.
-  </Step>
-  <Step title="Open Availability settings">
-    Look for the **Availability** or **My Availability** option.
-  </Step>
-  <Step title="Set your hours per day">
-    For each day you're available, set a start and end time. Toggle off any days you don't take appointments.
-  </Step>
-  <Step title="Save">
-    Your availability is now reflected on the public scheduling page.
-  </Step>
-</Steps>
+**Counselors with their own hours** lists everyone who has set their own, with **Change** and **Remove** for each band.
 
-## Availability exceptions
+## Check what counselees will see
 
-If you need to adjust your availability for a specific date — say, you're available earlier than usual one day or unavailable for part of an afternoon — you can add an availability exception for that date without affecting your regular schedule.
+**Preview the next 14 days** shows exactly what a counselee would be offered, after your [time off](/scheduling/time-off-blocks) and anything already booked. It's the quickest way to check a change worked.
 
-Exceptions come in two types:
-- **Block**: removes a window of time from an otherwise available day
-- **Extra**: adds a window of time on an otherwise unavailable day
+## Booking settings
 
-## Time-off blocks
+An administrator sets these for the practice:
 
-For longer periods of unavailability — vacations, conferences, extended leave — use time-off blocks rather than availability exceptions. See [Time-Off Blocks](/scheduling/time-off-blocks) for details.
+| Setting | What it does |
+|---|---|
+| **Earliest booking, in hours from now** | Stops a counselee booking a slot that starts too soon |
+| **How far ahead counselees may book, in days** | How far into the future slots are offered |
+| **Gap to keep either side of an appointment, in minutes** | Leaves time between sessions |
+| **Session length, in minutes** | The length of each slot offered |
+| **Offer these hours for booking** | Switches online booking on or off |
+| **Confirm each booking before it is final** | Requests wait on your Today list until you accept or decline them |
 
-## How the scheduler uses your availability
+Times are offered in the practice's time zone. Check it's right (**Practice → Scheduling**) before switching booking on.
 
-When a prospective counselee visits your scheduling page, the system calculates open slots by combining:
+## Who a counselee can book with
 
-1. Your weekly availability
-2. Any exceptions for the requested date
-3. Your existing appointments (so slots already booked are hidden)
-4. Your time-off blocks
-5. The center's booking lead time and window settings
-
-Only genuinely open slots are shown — the counselee can't request a time that's already taken or outside your available hours.
+A counselee books with the counselor who holds their case, on one of their open cases. Someone with no open case can't book online yet; book their first appointment yourself.

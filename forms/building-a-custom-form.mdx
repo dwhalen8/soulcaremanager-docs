@@ -1,71 +1,43 @@
 ---
-title: "Building a Custom Form"
-description: "Use the drag-and-drop form builder to create intake forms, surveys, and feedback forms."
+title: "Building a form"
+description: "Create your own intake forms, surveys and feedback forms."
 ---
 
-Beyond the default PDI, you can build your own forms for any purpose — a pre-session survey, a feedback form, a supplemental intake questionnaire, or anything else your practice needs.
+Forms live in **Practice → Intake → Forms**. Every staff member can read them; administrators create and change them.
 
-## Create a new form
+## Create a form
 
-<Steps>
-  <Step title="Go to Forms">
-    Click **Forms** in the sidebar.
-  </Step>
-  <Step title="Click New Form">
-    Give the form a name and choose a category.
-  </Step>
-  <Step title="Build your pages and fields">
-    Use the drag-and-drop builder to add fields.
-  </Step>
-  <Step title="Save">
-    The form is saved as a draft until you're ready to send it.
-  </Step>
-</Steps>
+Click **New form**, give it a name, and choose a category: **Personal data inventory**, **Intake contact**, **Survey**, **Feedback** or **General**. The form opens in the builder, with **What the counselee sees** beside it as you work.
 
-## Form categories
+## Pages and questions
 
-| Category | Use case |
+A form is a set of pages. Add a page, give it a title, and reorder pages with the arrows. On each page, **Add question** and choose its answer type:
+
+| Answer types | |
 |---|---|
-| **PDI** | Primary intake form; only one can be set as default per center |
-| **Intake / Contact** | Supplemental intake or initial contact forms |
-| **Survey** | Mid-counseling or ongoing check-ins |
-| **Feedback** | End-of-counseling feedback |
-| **General** | Anything else |
+| Text | **Short text**, **Long text**, **Number**, **Email address**, **Phone number**, **Website address** |
+| Dates | **Date**, **Time** |
+| Choices | **Dropdown**, **Dropdown (choose several)**, **Choose one**, **Tick box**, **Rating scale** |
+| Composite | **Full name**, **Address**, **List of items** (a small table with your own columns) |
+| Agreement | **Agreement to tick** |
+| Layout | **Section heading**, **Explanatory text**, **Page break**, **Hidden value** |
 
-## Field types
+Each question can have **Help text** and can be marked **Required**. Choice questions take their choices one per line. You can also choose how wide a question sits on the page, so short questions can share a row.
 
-The form builder supports the following field types:
+## Showing a question only when it applies
 
-- **Short text** — single-line input
-- **Long text** — multi-line text area
-- **Email** — validated email address field
-- **Phone** — phone number input
-- **Date** — date picker
-- **Dropdown** — select one from a list
-- **Radio buttons** — select one from visible options
-- **Checkboxes** — select one or more
-- **File upload** — let the counselee attach a file
-- **Signature** — drawn or typed signature
-- **Text / HTML block** — instructions, consent language, section headers, or any static content
+A question can depend on earlier answers: **Show this only when all of these are true**, then choose the earlier question, the condition and the answer to match. "If married, how long?" only appears for someone who said they're married.
 
-## Multi-page forms
+## Filling in the record
 
-Forms can span multiple pages. Add a new page using the page controls in the builder. Each page is presented to the counselee one at a time, with a progress indicator showing how far along they are.
+**Fills in** connects a question to a field on the counselee's record, such as date of birth or phone number. When the form comes back, that answer fills the record's field if it's blank, or is offered as a change if it differs.
 
-## Mapping fields to the counselee profile
+## Charging for a form
 
-For intake forms, you can map specific fields to counselee profile fields. When the form is submitted, the mapped data automatically populates the counselee's record.
+If you charge for intake, set an **Intake price** on the form. A counselee who submits it is billed automatically and given a link to pay. Leave it empty to ask for nothing.
 
-To map a field, open its settings in the builder and select the corresponding profile field from the dropdown.
+## Saving and versions
 
-## Required fields
+Click **Save form**. If a counselee has already answered this version, saving creates a new version, and their answers keep the questions they were asked.
 
-Mark any field as required to prevent submission without an answer. Required fields are indicated with an asterisk when the counselee fills out the form.
-
-## Consent and signature fields
-
-Use an HTML/text block to add consent language, then follow it with a signature field. The signature is captured and stored with the submission.
-
-## Making a form the default PDI
-
-If you've built a custom intake form you want to use as your primary PDI, you can promote it to the default. Go to the form's settings and select **Make Default**. Only one form per category can be the default at a time.
+Required answers are checked when the form is submitted, so a form can't come back missing something you've marked required.
